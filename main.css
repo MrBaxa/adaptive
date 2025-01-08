@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.cards {
+  height: fit-content;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+@media (max-width: 1300px) {
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    width: 311px;
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 972px) {
+  .cards {
+    background-color: black;
+  }
+  .card {
+    width: 45%;
+    background-color: green;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    padding: 30px;
+    background-color: antiquewhite;
+  }
+  .card {
+    width: 100%;
+    background-color: white;
+    color: black;
+  }
+}
